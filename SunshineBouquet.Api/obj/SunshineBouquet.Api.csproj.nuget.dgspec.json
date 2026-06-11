@@ -53,6 +53,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "HotChocolate.ApolloFederation": {
+              "target": "Package",
+              "version": "[16.1.3, )"
+            },
             "HotChocolate.AspNetCore": {
               "target": "Package",
               "version": "[16.1.3, )"

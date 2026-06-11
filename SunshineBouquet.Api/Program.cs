@@ -19,7 +19,8 @@ builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
     .AddMutationType<Mutation>()
-    .AddFiltering();
+    .AddFiltering()
+    .AddApolloFederation();
 
 var app = builder.Build();
 
