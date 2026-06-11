@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SunshineBouquet.Api/SunshineBouquet.Api.csproj" />
+  <Project Path="SunshineBouquet.Domain/SunshineBouquet.Domain.csproj" />
+  <Project Path="SunshineBouquet.Infrastructure/SunshineBouquet.Infrastructure.csproj" />
+  <Project Path="SunshineBouquet.Tests/SunshineBouquet.Tests.csproj" />
+</Solution>
