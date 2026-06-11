@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-between align-items-center mb-3 mt-3">
+  <h2>Gestión de Órdenes</h2>
+  <div>
+    <a routerLink="/orders" class="btn btn-outline-secondary me-2">Volver al Dashboard</a>
+    <a routerLink="/orders/create" class="btn btn-success">Crear Orden</a>
+  </div>
+</div>
+<div class="table-responsive shadow-sm">
+  <table class="table table-striped table-hover align-middle mb-0">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Tienda</th>
+        <th>Origen</th>
+        <th>Destino</th>
+        <th>Ramos</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td><small class="text-muted">{{ order.id | slice:0:8 }}</small></td>
+        <td><strong>{{ order.customerStore }}</strong></td>
+        <td>{{ order.originCountry }}</td>
+        <td>{{ order.destinationCity }}</td>
+        <td>{{ order.bouquetQuantity }}</td>
+        <td>
+          <span class="badge"
+            [ngClass]="{
+              'bg-secondary': order.status === 'CREATED',
+              'bg-info text-dark': order.status === 'IN_TRANSIT',
+              'bg-success': order.status === 'DELIVERED',
+              'bg-danger': order.status === 'CANCELLED'
+            }">
+            {{ order.status }}
+          </span>
+        </td>
+        <td>
+          <button class="btn btn-sm btn-primary me-2" *ngIf="order.status === 'CREATED'" (click)="updateStatus(order.id, order.status)">A Tránsito</button>
+          <button class="btn btn-sm btn-success me-2" *ngIf="order.status === 'IN_TRANSIT'" (click)="updateStatus(order.id, order.status)">A Entregado</button>
+          <button class="btn btn-sm btn-danger" *ngIf="order.status === 'CREATED'" (click)="cancelOrder(order.id)">Cancelar</button>
+        </td>
+      </tr>
+      <tr *ngIf="orders.length === 0">
+        <td colspan="7" class="text-center py-5 text-muted">No hay órdenes registradas actualmente.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
