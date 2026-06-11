@@ -1,0 +1,26 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.x'
+
+- script: dotnet restore
+  displayName: 'Restore packages'
+
+- script: dotnet build --configuration $(buildConfiguration) --no-restore
+  displayName: 'Build projects'
+
+- script: dotnet test --configuration $(buildConfiguration) --no-build --verbosity normal
+  displayName: 'Run unit tests'
+
+- script: npx husky install
+  displayName: 'Setup Husky'
