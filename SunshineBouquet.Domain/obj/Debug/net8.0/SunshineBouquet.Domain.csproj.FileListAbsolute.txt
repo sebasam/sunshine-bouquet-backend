@@ -1,0 +1,12 @@
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\bin\Debug\net8.0\SunshineBouquet.Domain.deps.json
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\bin\Debug\net8.0\SunshineBouquet.Domain.dll
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\bin\Debug\net8.0\SunshineBouquet.Domain.pdb
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\SunshineBouquet.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\SunshineBouquet.Domain.AssemblyInfoInputs.cache
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\SunshineBouquet.Domain.AssemblyInfo.cs
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\SunshineBouquet.Domain.csproj.CoreCompileInputs.cache
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\SunshineBouquet.Domain.sourcelink.json
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\SunshineBouquet.Domain.dll
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\refint\SunshineBouquet.Domain.dll
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\SunshineBouquet.Domain.pdb
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Domain\obj\Debug\net8.0\ref\SunshineBouquet.Domain.dll
