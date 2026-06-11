@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SunshineBouquet.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6e1e043afc9a1ea897a4317f450227036deb60c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+369e998f614fc75ef9b585a62fa6b1741057c832")]
 [assembly: System.Reflection.AssemblyProductAttribute("SunshineBouquet.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SunshineBouquet.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
