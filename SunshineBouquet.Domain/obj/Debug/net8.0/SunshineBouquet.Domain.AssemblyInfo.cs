@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SunshineBouquet.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17f059ef0cdfb7c5d6668d219a7dad1ac9467055")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0df8c946247b5bd57d955e00709ba6d80e8fc93f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SunshineBouquet.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SunshineBouquet.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
