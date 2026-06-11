@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "i9zu2hdhqLo=",
+  "dgSpecHash": "YuiIFjBCFnQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\sebas\\Documents\\technical-test\\sunshine-bouquet-backend\\SunshineBouquet.Api\\SunshineBouquet.Api.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\sebas\\.nuget\\packages\\hotchocolate.authorization\\16.1.3\\hotchocolate.authorization.16.1.3.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\hotchocolate.caching.memory\\16.1.3\\hotchocolate.caching.memory.16.1.3.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\hotchocolate.costanalysis\\16.1.3\\hotchocolate.costanalysis.16.1.3.nupkg.sha512",
+    "C:\\Users\\sebas\\.nuget\\packages\\hotchocolate.data\\16.1.3\\hotchocolate.data.16.1.3.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\hotchocolate.execution.abstractions\\16.1.3\\hotchocolate.execution.abstractions.16.1.3.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\hotchocolate.execution.configuration.abstractions\\16.1.3\\hotchocolate.execution.configuration.abstractions.16.1.3.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\hotchocolate.execution.operation.abstractions\\16.1.3\\hotchocolate.execution.operation.abstractions.16.1.3.nupkg.sha512",

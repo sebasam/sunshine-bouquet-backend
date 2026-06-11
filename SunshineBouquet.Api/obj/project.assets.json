@@ -280,6 +280,32 @@
           }
         }
       },
+      "HotChocolate.Data/16.1.3": {
+        "type": "package",
+        "dependencies": {
+          "GreenDonut.Data": "16.1.3",
+          "GreenDonut.Data.Abstractions": "16.1.3",
+          "GreenDonut.Data.Primitives": "16.1.3",
+          "HotChocolate.Execution.Operation.Abstractions": "16.1.3",
+          "HotChocolate.Execution.Projections": "16.1.3",
+          "HotChocolate.Types": "16.1.3",
+          "HotChocolate.Types.CursorPagination.Extensions": "16.1.3"
+        },
+        "compile": {
+          "lib/net8.0/HotChocolate.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/HotChocolate.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/HotChocolate.Data.props": {},
+          "build/HotChocolate.Data.targets": {}
+        }
+      },
       "HotChocolate.Execution.Abstractions/16.1.3": {
         "type": "package",
         "dependencies": {
@@ -2686,6 +2712,27 @@
         "lib/net8.0/HotChocolate.CostAnalysis.xml",
         "lib/net9.0/HotChocolate.CostAnalysis.dll",
         "lib/net9.0/HotChocolate.CostAnalysis.xml"
+      ]
+    },
+    "HotChocolate.Data/16.1.3": {
+      "sha512": "HIJys+j511km7CDi1R8tjhje7+HRYtIsbdK4/G4iFOMsaxqjuzj6S/ADBSijO8zjcw9+y8jb6RTMgK+d+1J8+g==",
+      "type": "package",
+      "path": "hotchocolate.data/16.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/HotChocolate.Data.props",
+        "build/HotChocolate.Data.targets",
+        "hotchocolate-icon.png",
+        "hotchocolate.data.16.1.3.nupkg.sha512",
+        "hotchocolate.data.nuspec",
+        "lib/net10.0/HotChocolate.Data.dll",
+        "lib/net10.0/HotChocolate.Data.xml",
+        "lib/net8.0/HotChocolate.Data.dll",
+        "lib/net8.0/HotChocolate.Data.xml",
+        "lib/net9.0/HotChocolate.Data.dll",
+        "lib/net9.0/HotChocolate.Data.xml"
       ]
     },
     "HotChocolate.Execution.Abstractions/16.1.3": {
@@ -5908,6 +5955,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "HotChocolate.AspNetCore >= 16.1.3",
+      "HotChocolate.Data >= 16.1.3",
       "Microsoft.AspNetCore.OpenApi >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.11",
@@ -5968,6 +6016,10 @@
         "targetAlias": "net8.0",
         "dependencies": {
           "HotChocolate.AspNetCore": {
+            "target": "Package",
+            "version": "[16.1.3, )"
+          },
+          "HotChocolate.Data": {
             "target": "Package",
             "version": "[16.1.3, )"
           },
