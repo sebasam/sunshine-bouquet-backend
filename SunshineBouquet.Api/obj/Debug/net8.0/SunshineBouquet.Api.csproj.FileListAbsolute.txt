@@ -192,3 +192,4 @@ C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet
 C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Api\obj\Debug\net8.0\SunshineBouquet.Api.pdb
 C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Api\obj\Debug\net8.0\SunshineBouquet.Api.genruntimeconfig.cache
 C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Api\obj\Debug\net8.0\ref\SunshineBouquet.Api.dll
+C:\Users\sebas\Documents\technical-test\sunshine-bouquet-backend\SunshineBouquet.Api\bin\Debug\net8.0\HotChocolate.ApolloFederation.dll

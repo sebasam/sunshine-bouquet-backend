@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KEDKjwwSjj8=",
+  "dgSpecHash": "yLob7YXgjmw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebas\\Documents\\technical-test\\sunshine-bouquet-backend\\SunshineBouquet.Tests\\SunshineBouquet.Tests.csproj",
+  "projectFilePath": "c:\\Users\\sebas\\Documents\\technical-test\\sunshine-bouquet-backend\\SunshineBouquet.Tests\\SunshineBouquet.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.codecoverage\\18.6.0\\microsoft.codecoverage.18.6.0.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.net.test.sdk\\18.6.0\\microsoft.net.test.sdk.18.6.0.nupkg.sha512",
