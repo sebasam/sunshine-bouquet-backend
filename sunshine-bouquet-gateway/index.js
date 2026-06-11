@@ -1,20 +1,21 @@
 const { ApolloServer } = require('@apollo/server');
 const { startStandaloneServer } = require('@apollo/server/standalone');
-const { IntrospectAndCompose } = require('@apollo/gateway');
+const { ApolloGateway, IntrospectAndCompose } = require('@apollo/gateway');
 
-const gateway = new IntrospectAndCompose({
-  subgraphs: [
-    { name: 'orders', url: 'http://backend:8080/graphql' }
-  ]
+const gateway = new ApolloGateway({
+  supergraphSdl: new IntrospectAndCompose({
+    subgraphs: [
+      { name: 'orders', url: 'http://backend:8080/graphql' }
+    ]
+  })
 });
 
 const server = new ApolloServer({
   gateway,
-  subscriptions: false,
 });
 
 startStandaloneServer(server, {
-  listen: { port: 4000 },
+  listen: { port: 4000, host: '0.0.0.0' },
 }).then(({ url }) => {
   console.log(`Gateway ready at ${url}`);
 });
