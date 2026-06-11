@@ -1,23 +1,24 @@
-# Sunshine Bouquet - Export Orders MVP (Backend)
+# Sunshine Bouquet - Export Orders MVP
 
-MVP para la gestión de órdenes de exportación de flores desde LATAM hacia USA.
+MVP for managing flower export orders from LATAM to the USA, demonstrating Clean Architecture, SOLID principles, and a modern tech stack.
 
-## Arquitectura y Decisiones Técnicas
-* **Clean Architecture & DDD Básico:** Se separó la lógica de negocio (`Domain`) de los detalles de implementación (`Infrastructure` y `Api`). Las transiciones de estado están encapsuladas en la entidad `Order` para evitar modelos anémicos y cumplir con el principio Open/Closed (SOLID).
-* **GraphQL (HotChocolate):** Elegido por su integración nativa y limpia con .NET y EF Core. Se expone un único endpoint flexible para el cliente Angular.
-* **EF Core:** Utilizado como ORM con un enfoque Code-First.
+## Architecture & Tech Stack
+* **Backend:** .NET 8, HotChocolate (GraphQL), EF Core, SQL Server. Built with Clean Architecture principles.
+* **Frontend:** Angular 19, Apollo Client, Bootstrap, Reactive Forms.
+* **DevOps:** Docker, Docker Compose, Azure Pipelines (CI), Husky (Pre-commit hooks).
 
-## Cómo Ejecutar (Local)
-1. Levantar la base de datos SQL Server mediante Docker:
-   `docker-compose up -d sqlserver`
-2. Aplicar migraciones (requiere EF Tools):
-   `dotnet ef migrations add InitialCreate --project SunshineBouquet.Infrastructure --startup-project SunshineBouquet.Api`
-   `dotnet ef database update --project SunshineBouquet.Infrastructure --startup-project SunshineBouquet.Api`
-3. Ejecutar la API:
-   `dotnet run --project SunshineBouquet.Api`
-4. Navegar a `http://localhost:5000/graphql` para acceder al Playground (Banana Cake Pop).
+## How to Run (Docker Compose)
+Prerequisites: Docker and Docker Compose installed on your machine.
 
-## Mejoras Futuras
-* Implementar Patrón Repository completo si la lógica de acceso a datos se vuelve más compleja.
-* Añadir un Apollo Gateway real en Node.js si la arquitectura migra a microservicios/subgrafos (Federation).
-* Integrar autenticación y autorización (JWT) en los endpoints de mutación.
+1. Clone the repository.
+2. Open a terminal in the root directory.
+3. Run the following command to build and start the Database, Backend, and Frontend containers:
+   `docker-compose up --build -d`
+4. Access the applications:
+   * **Frontend UI:** `http://localhost:80`
+   * **Backend GraphQL API / Playground:** `http://localhost:5000/graphql`
+
+## Technical Decisions & Future Improvements
+* **GraphQL Implementation:** Used HotChocolate natively in .NET for seamless EF Core integration. A dedicated Apollo Gateway (Node.js) can be implemented in the future if the architecture transitions to a federated microservices model.
+* **Domain Driven Design:** Order status transitions are encapsulated within the Domain Entity to protect business invariants and avoid anemic models.
+* **Future scope:** Add JWT Authentication/Authorization and expand E2E test coverage.
