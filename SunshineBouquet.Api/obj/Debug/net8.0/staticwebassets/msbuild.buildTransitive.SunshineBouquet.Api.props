@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\SunshineBouquet.Api.props" />
-</Project>

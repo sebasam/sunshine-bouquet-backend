@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Sunshine Bouquet GraphQL",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Get Orders",
+      "request": {
+        "method": "POST",
+        "header": [ { "key": "Content-Type", "value": "application/json" } ],
+        "url": { "raw": "http://localhost:4000/graphql", "host": [ "http", "localhost" ], "port": "4000", "path": [ "graphql" ] },
+        "body": { "mode": "graphql", "graphql": { "query": "query GetOrders {\n  orders {\n    id\n    customerStore\n    originCountry\n    destinationCity\n    bouquetQuantity\n    status\n    createdAt\n  }\n}" } }
+      }
+    },
+    {
+      "name": "2. Create Order",
+      "request": {
+        "method": "POST",
+        "header": [ { "key": "Content-Type", "value": "application/json" } ],
+        "url": { "raw": "http://localhost:4000/graphql", "host": [ "http", "localhost" ], "port": "4000", "path": [ "graphql" ] },
+        "body": { "mode": "graphql", "graphql": { "query": "mutation CreateOrder($customerStore: String!, $originCountry: String!, $destinationCity: String!, $bouquetQuantity: Int!) {\n  createOrder(\n    customerStore: $customerStore\n    originCountry: $originCountry\n    destinationCity: $destinationCity\n    bouquetQuantity: $bouquetQuantity\n  ) {\n    id\n    status\n  }\n}", "variables": "{\n  \"customerStore\": \"Walmart\",\n  \"originCountry\": \"Colombia\",\n  \"destinationCity\": \"Miami\",\n  \"bouquetQuantity\": 500\n}" } }
+      }
+    },
+    {
+      "name": "3. Update Order Status",
+      "request": {
+        "method": "POST",
+        "header": [ { "key": "Content-Type", "value": "application/json" } ],
+        "url": { "raw": "http://localhost:4000/graphql", "host": [ "http", "localhost" ], "port": "4000", "path": [ "graphql" ] },
+        "body": { "mode": "graphql", "graphql": { "query": "mutation UpdateOrderStatus($id: UUID!, $newStatus: OrderStatus!) {\n  updateOrderStatus(id: $id, newStatus: $newStatus) {\n    id\n    status\n  }\n}", "variables": "{\n  \"id\": \"PON_AQUI_EL_ID_DE_LA_ORDEN\",\n  \"newStatus\": \"IN_TRANSIT\"\n}" } }
+      }
+    }
+  ]
+}
